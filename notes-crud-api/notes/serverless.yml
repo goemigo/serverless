@@ -75,13 +75,12 @@ functions:
       - http:
           method: get
           path: notes
-          authorizer: 
-            name: userpool_authorizer
-            arn: ${ssm:/notes/${self:provider.stage}/userPoolArn}
+          # authorizer: 
+          #   name: userpool_authorizer
+          #   arn: ${ssm:/notes/${self:provider.stage}/userPoolArn}
 
 plugins:
   - serverless-iam-roles-per-function
 
-# you can add CloudFormation resource templates here
 resources:
   Resources: ${file(resources.yml)}
