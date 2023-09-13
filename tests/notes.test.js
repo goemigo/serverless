@@ -2,7 +2,7 @@ const { authenticated_user } = require('./steps/given');
 let init = require('./steps/init');
 let idToken;
 
-dscribe('Given an authenticated user', () => {
+describe('Given an authenticated user', () => {
     init(); //load environment variables from .env
     beforeAll(async () => {
         init();

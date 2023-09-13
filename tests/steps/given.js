@@ -18,6 +18,8 @@ exports.authenticated_user = async () => {
             USERNAME: username,
             PASSWORD: password
         }
-
     }
+
+    let user = await cognito.adminInitiateAuth(params).promise();
+    return user;
 }
