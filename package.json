@@ -4,13 +4,15 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"All tests passed!\""
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@aws-sdk/client-dynamodb": "^3.409.0",
+    "dotenv": "^16.3.1",
+    "jest": "^29.7.0",
     "serverless-iam-roles-per-function": "^3.2.0"
   },
   "dependencies": {
