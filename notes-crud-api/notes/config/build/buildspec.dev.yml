@@ -8,7 +8,7 @@ phases:
     commands:
       - echo Installing serverless CLI
       - npm i -g serverless@3
-      - cd notes
+      - cd notes-crud-api/notes
       - echo Installing npm dependencies of notes service
       - npm install
   build:
@@ -24,4 +24,4 @@ artifacts:
   name: MyProjectArtifact
 cache:
   paths:
-    - 'notes/node_modules/**/*'
+    - 'notes-crud-api/notes/node_modules/**/*'
