@@ -16,7 +16,7 @@ describe('Given an authenticated user', () => {
         it('Should create a new note', async () => {
             // expect(true).toBe(true); //mock test
             const body = {
-                id: "1000",
+                id: "1001",
                 title: "note to test jest",
                 body: "this is the test body"
             }
